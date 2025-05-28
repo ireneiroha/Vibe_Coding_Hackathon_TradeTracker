@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 334 10% 8%;
+  --muted: 240 5% 96%;
+  --muted-foreground: 25 5% 45%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 334 10% 8%;
+  --card: 0 0% 100%;
+  --card-foreground: 334 10% 8%;
+  --border: 240 6% 90%;
+  --input: 240 6% 90%;
+  --primary: 207 90% 54%; /* #2563EB */
+  --primary-foreground: 211 100% 99%;
+  --secondary: 152 60% 50%; /* #10B981 */
+  --secondary-foreground: 210 40% 98%;
+  --accent: 35 91% 51%; /* #F59E0B */
+  --accent-foreground: 26 83% 14%;
+  --destructive: 0 84% 60%; /* #EF4444 */
+  --destructive-foreground: 60 9% 98%;
+  --ring: 334 10% 8%;
+  --radius: 0.5rem;
+  
+  /* Custom app colors */
+  --app-primary: 207 90% 54%; /* #2563EB */
+  --app-secondary: 152 60% 50%; /* #10B981 */
+  --app-accent: 35 91% 51%; /* #F59E0B */
+  --app-danger: 0 84% 60%; /* #EF4444 */
+  --app-gray-50: 210 40% 98%; /* #F8FAFC */
+  --app-gray-100: 214 32% 91%; /* #F1F5F9 */
+  --app-gray-600: 215 16% 47%; /* #64748B */
+  --app-gray-800: 215 25% 27%; /* #334155 */
+}
+
+.dark {
+  --background: 240 10% 4%;
+  --foreground: 0 0% 98%;
+  --muted: 240 4% 16%;
+  --muted-foreground: 240 5% 65%;
+  --popover: 240 10% 4%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 4%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 4% 16%;
+  --input: 240 4% 16%;
+  --primary: 207 90% 54%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 152 60% 50%;
+  --secondary-foreground: 210 40% 98%;
+  --accent: 35 91% 51%;
+  --accent-foreground: 26 83% 14%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 60 9% 98%;
+  --ring: 240 5% 90%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-app-primary {
+    color: hsl(var(--app-primary));
+  }
+  
+  .text-app-secondary {
+    color: hsl(var(--app-secondary));
+  }
+  
+  .text-app-accent {
+    color: hsl(var(--app-accent));
+  }
+  
+  .text-app-danger {
+    color: hsl(var(--app-danger));
+  }
+  
+  .bg-app-primary {
+    background-color: hsl(var(--app-primary));
+  }
+  
+  .bg-app-secondary {
+    background-color: hsl(var(--app-secondary));
+  }
+  
+  .bg-app-accent {
+    background-color: hsl(var(--app-accent));
+  }
+  
+  .bg-app-danger {
+    background-color: hsl(var(--app-danger));
+  }
+  
+  .bg-app-gray-50 {
+    background-color: hsl(var(--app-gray-50));
+  }
+  
+  .bg-app-gray-100 {
+    background-color: hsl(var(--app-gray-100));
+  }
+  
+  .border-app-primary {
+    border-color: hsl(var(--app-primary));
+  }
+  
+  .hover\:bg-app-primary:hover {
+    background-color: hsl(var(--app-primary));
+  }
+}
