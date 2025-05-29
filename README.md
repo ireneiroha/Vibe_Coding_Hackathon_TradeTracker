@@ -102,5 +102,8 @@ Submit a pull request
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+Link for the screen shoot:
+https://1drv.ms/i/c/149464d8901c5efc/ESP-2PyNtHZJvhaCX_73z-EB_mT63ye3fJ69ZvXM7-a30w?e=3DYcuV
+
 Support
 For support, questions, or feature requests, please open an issue in the GitHub repository.
